@@ -27,6 +27,7 @@ function start() {
   startButton.classList.add("hide")
   currentIndex = 0
   questionContainer.classList.remove("hide")
+  answerButtons.classList.remove("hide")
   next()
 }
 
