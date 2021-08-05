@@ -1,0 +1,70 @@
+.btn {
+    text-transform: unset !important;
+    margin: 10px;
+    background-color: #005FBF !important;
+}
+
+#startButton {
+  font-size: 20px;
+}
+
+.quizContainer{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.indexContainer{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+body {
+  background-color: #2e2e2e;
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: white;
+}
+
+.nav-wrapper {
+  background-image: linear-gradient(90deg, #005FBF, #2e2e2e);
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-color: #005FBF;
+  border-left-style: ridge;
+  border-left-width: 9px;
+}
+.nav-wrapper a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav-wrapper a:hover {
+  background-color: #ddd;
+  color: #004f9e;
+}
+
+h1 {
+  margin: 5px !important;
+  margin-bottom: 15px !important;
+}
+
+.page-footer {
+  margin-bottom: 20px;
+  background-image: linear-gradient(90deg, #2e2e2e, #005FBF);
+  color: #ddd;
+  padding: 0px;
+  height: 70px;
+}
+
+.col {
+  padding:0px !important;
+}

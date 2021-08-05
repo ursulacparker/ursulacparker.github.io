@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Let's Be Cyber Aware: Quiz</title>
+  <link href="styles.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+
+  <h1>Let's Be Cyber Aware</h1>
+
+  <nav class="navbar">
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quiz.html">Take the quiz</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="quizContainer">
+
+    <h3>The Quiz</h3>
+    <h5><div id="score">Your Current Score: 0</div></h5>
+
+    <div class="row">
+      <div class="col s12 m12">
+
+        <div class="card grey darken-3">
+          <div id="questionContainer" class="hide">
+            <div class="card-content white-text">
+              <div id="question">Question</div>
+            </div>
+            <div class="card-action">
+              <div id="answerButtons" class="buttonOptions">
+                <button class="btn possibleAnswer">Answer 1</button>
+                <button class="btn possibleAnswer">Answer 2</button>
+                <button class="btn possibleAnswer">Answer 3</button>
+                <button class="btn possibleAnswer">Answer 4</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bottom" class="card grey darken-3">
+          <div class="card-content white-text">
+            <button id="startButton" class="startButton btn">START QUIZ</button>
+            <div id="explanation" class="hide">Explanation</div>
+          </div>
+          <div class="card-action">
+            <div class="controls">
+              <button id="nextButton" class="nextButton btn hide">Next</button>
+              <button id="endButton" class="endButton btn hide">End Quiz</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <br /><br />
+
+
+  <footer class="page-footer" style="padding:0px;">
+    <script src="scripts.js"></script>
+    <div class="footer-copyright">
+      <p style="text-align: center; color:gray;">
+        © 2021 Ursula C. Parker, HackTrin
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
