@@ -5,11 +5,12 @@
   <link href="styles.css" rel="stylesheet"/>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
 
-  <h1>Let's Be Cyber Aware</h1>
+  <h1><b>Let's Be Cyber Aware!</b></h1>
 
   <nav class="navbar">
     <div class="nav-wrapper">
@@ -23,7 +24,7 @@
 
   <div class="quizContainer">
 
-    <h3>The Quiz</h3>
+    <h3><b>The Quiz</b></h3>
     <h5><div id="score">Your Current Score: 0</div></h5>
 
     <div class="row">
@@ -31,11 +32,11 @@
 
         <div class="card grey darken-3">
           <div id="questionContainer" class="hide">
-            <div class="card-content white-text">
+            <div class="card-content white-text" style="padding: 15px;">
               <div id="question">Question</div>
             </div>
-            <div class="card-action">
-              <div id="answerButtons" class="buttonOptions">
+            <div class="card-action" style="padding:1px;">
+              <div id="answerButtons" class="buttonOptions" style="margin: 1px;">
                 <button class="btn possibleAnswer">Answer 1</button>
                 <button class="btn possibleAnswer">Answer 2</button>
                 <button class="btn possibleAnswer">Answer 3</button>
@@ -46,11 +47,11 @@
         </div>
 
         <div id="bottom" class="card grey darken-3">
-          <div class="card-content white-text">
-            <button id="startButton" class="startButton btn">START QUIZ</button>
+          <div class="card-content white-text" style="padding: 15px;">
+            <button id="startButton" class="startButton btn" style="margin: 1px;">Start Quiz</button>
             <div id="explanation" class="hide">Explanation</div>
           </div>
-          <div class="card-action">
+          <div class="card-action" style="padding:1px;">
             <div class="controls">
               <button id="nextButton" class="nextButton btn hide">Next</button>
               <button id="endButton" class="endButton btn hide">End Quiz</button>
@@ -63,14 +64,12 @@
 
   </div>
 
-  <br /><br />
-
 
   <footer class="page-footer" style="padding:0px;">
     <script src="scripts.js"></script>
     <div class="footer-copyright">
       <p style="text-align: center; color:gray;">
-        © 2021 Ursula C. Parker, HackTrin
+        © 2021 Ursula C. Parker
       </p>
     </div>
   </footer>

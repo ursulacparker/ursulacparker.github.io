@@ -102,14 +102,14 @@ function endQuiz() {
   bottom.classList.remove("hide")
   answerButtons.classList.add("hide")
 
-  if (points == 42) {
-    questionText.innerText = "Your final score was " + points + " points! You got a perfect score! You must be a cybersecurity pro!"
-  }else if (points >= 35 && points <= 41) {
-    questionText.innerText = "Your final score was " + points + " points! You are a cybersecurity aficionado!"
-  }else if (points >= 23 && points <= 29) {
-    questionText.innerText = "Your final score was " + points + " points! You are on your way to becoming a cybersecurity expert!"
+  if (points == 50) {
+    questionText.innerText = "Your final score was " + points + "/50! You got a perfect score! Wow, you must be a cybersecurity pro!"
+  }else if (points >= 45 && points <= 49) {
+    questionText.innerText = "Your final score was " + points + "/50! You are a cybersecurity expert!"
+  }else if (points >= 35 && points <= 44) {
+    questionText.innerText = "Your final score was " + points + "/50! You are on your way to becoming a cybersecurity afficionato!"
   }else {
-      questionText.innerText = "Your final score was " + points + " points! You are a cybersecurity student. Keep it up!"
+      questionText.innerText = "Your final score was " + points + "/50! You are a cybersecurity student. Keep it up!"
   }
 
   startButton.classList.remove("hide")
@@ -120,11 +120,11 @@ function endQuiz() {
 //questions obj array
 const questions = [
   {
-    question: "You are joining a site. The site asks you to create a secure password. Do you use:",
+    question: "You are joining a site. The site asks you to create a secure password. Do you:",
     answers: [
-      {text: "A password with only lowercase letters", points: 1, correct: false},
-      {text: "Your pet's name followed by some numbers", points: 2, correct: false},
-      {text: "A password with capital letters, lowecase letters, numbers, and special symbols but one you use on many other sites", points: 3, correct: false},
+      {text: "Input a password with only lowercase letters.", points: 1, correct: false},
+      {text: "Input your pet's name followed by some numbers.", points: 2, correct: false},
+      {text: "Input a password with capital letters, lowecase letters, numbers, and special symbols but one you use on many other sites.", points: 3, correct: false},
       {text: "A password with capital letters, lowecase letters, numbers, and special symbols, and one that is unique to this site", points: 4, correct: true}
     ],
     explanation: "There is a reason that most sites ask you to input numbers, capitalized letters, special characters, etc. It might be a bit annoying, however hackers often use brute-force algorithms to crack passwords; the longer the password is and the more character possibilities there are, the longer it would take to brute force. Similarly, hackers use wordlists (long documents filled with commonly used passwords), so choosing your pet's name or the name of a popular icon would not be the best idea. Try to go with a phrase that you can easily remember and try to customize it for each site. For example, a password like 'Ilove2eatmangosandpotatoes!amazonprime' would be practically uncrackable, and the amazon prime at the end would differentiate it from passwords on other sites."
@@ -221,8 +221,8 @@ const questions = [
   {
     question: "You really want to download this new videogame, but you don't really want to pay for it. You find a site that offers the game for free. Do you:",
     answers: [
-      {text: "Download it. This is a perfect scenario! I get the game without having to pay the price", points: 1, correct: false},
-      {text: "Just pay for the game", points: 2, correct: true}
+      {text: "Download it. This is a perfect scenario! I get the game without having to pay the price!", points: 1, correct: false},
+      {text: "Just pay for the game.", points: 2, correct: true}
     ],
     explanation: "If you downloaded the 'free' game, you find that the only game being played is a battle between malware and your computer. General PSA: pirated things are illegal. You shouldn't download them anyways. Another PSA is that when sites claim to have pirated goods, they actually usually don't. Any time a site is offering a paid item for free, just leave the site and don't download anything, no matter how tempting it may be."
   },
@@ -273,5 +273,34 @@ const questions = [
     ],
     explanation: "If you decided to not use a password, halfway through the meeting there was a random person that showed up and started harassing you. They started saying/doing disturbing things as you desperately tried to kick them off of the meeting. Your boss now blames you for the incident. Oof! Using passwords on your Zoom meeting prevents a phenomenon known as Zoombombing, or joining random rooms that are not password protected. Keep your meetings secure!"
   },
+
+  {
+    question: "You get an email stating that all your data is going to be lost! But no worries, you can keep your data by typing in your username and password into an unusual site. Do you:",
+    answers: [
+      {text: "Type in my username and password. I dont want to lose my data!", points: 1, correct: true},
+      {text: "Open the link and explore the site a bit.", points: 2, correct: false},
+      {text: "Do not click on any link and report the email as a phishing attempt.", points: 3, correct: true},
+    ],
+    explanation: "If you inputted your username and password, you find that someone has been posting disturbing things about people you know under your username. Your boss has just fired you and now all your friends are avoiding you. Yikes! Never put your username and password into a site that is not reputable. Be careful, phishing attack sites can be very good copies of the site they are trying to replicate. Always check the link of a site and ensure that it is identical to the one you are expecting. Additionally, check for the secure icon (make sure it is HTTPS and not HTTP)."
+  },
+
+  {
+    question: "You get a text message stating that your Apple ID requires verification leading you to a confirmation link. Do you:",
+    answers: [
+      {text: "Type in my Apple ID and password. They're just verifying!", points: 1, correct: false},
+      {text: "Do not click on the link and delete the message.", points: 2, correct: false},
+      {text: "Do not click on the link, delete the message, and report as junk.", points: 3, correct: true},
+    ],
+    explanation: "If you inputted your Apple ID and password, you notice that there are hundreds of new subscriptions that have been paid for under your account. A bunch of new apps have been downloaded, including a $1000 application that just shows a screen saying 'I am rich'. Well there goes my vacation savings! Any time that a message wants you to verify information, be extremely cautious. Generally, the only time you should ever recieve a message like this is when you sign in and the (reputable) site states that you will recieve a security code. Unless you are expecting a verification, NEVER verify your account. It is a phishing attack. Reporting these messages is good practice, as you could be saving someone more vulnerable from this attack."
+  },
+
+  {
+    question: "You are signing up for a professional site, and you have the choice of enabling 2 or multi factor authentication. Do you:",
+    answers: [
+      {text: "Set up multi factor authentication.", points: 2, correct: true},
+      {text: "Set it up later/never. Those things are so much work anyways!", points: 1, correct: false}
+    ],
+    explanation: "If you did not set up multi factor authentication, you open the site the next morning and find that you just sent uhh... unprofessional messages to all of your old teachers. It wasn't me I swear! If you did set up multi factor authentication, a code would have been sent to you stating that you were trying to sign in. Because it was not you, you would have clicked 'deny' and changed your password; the hacker would not have been able to get into your account. Crisis averted! Always set up multi factor authentication if you have the chance. It usually prevents hackers from accessing your account and doing nefarious acts. The extra layer(s) of security provide a lot of much needed protection."
+  }
 
 ]
